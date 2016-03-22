@@ -31,7 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password good
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
+# Use Unicorn as the app server good
 # gem 'unicorn'
 
 # Use Capistrano for deployment
@@ -52,7 +52,7 @@ group :development do
 
 gem 'therubyracer' # javascript runtime。lessをコンパイルするために必要
 gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれているため
-gem 'twitter-bootstrap-rails' # Bootstrapの本体
+#gem 'twitter-bootstrap-rails' # Bootstrapの本体
 
 
 end
