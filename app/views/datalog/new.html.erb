@@ -1,0 +1,22 @@
+<h1>KaKeiBo</h1>
+<body>
+ <body style="background-color:#a5c9c1;">
+
+<%= form_tag datalog_path do %>
+  収入
+  <input type="integer" name="income" class="form-control title-field">
+  支出
+  <input type="integer" name="expenses" class="form-control title-field">
+  用途
+   <input type="text" name="use" class="form-control title-field">
+   
+    <label for="product_rate">Use</label><br>
+    <input type="radio" value="1" name="product[rate]" id="product_rate_1"> <label for="product_rate_1">1</label>
+    <input type="radio" value="2" name="product[rate]" id="product_rate_2"> <label for="product_rate_2">2</label>
+    <input type="radio" value="3" name="product[rate]" id="product_rate_3"> <label for="product_rate_3">3</label>
+    <input type="radio" value="4" name="product[rate]" id="product_rate_4"> <label for="product_rate_4">4</label>
+    <input type="radio" value="5" name="product[rate]" id="product_rate_5"> <label for="product_rate_5">5</label>
+ 
+  <input type="submit" value="Record!" class="btn primary-btn">
+  </body>
+<% end %>

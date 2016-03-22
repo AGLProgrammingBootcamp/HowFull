@@ -1,0 +1,36 @@
+<h1>入力履歴</h1>
+<ul class="list">
+  <% @datalist.each do |datastr| %>
+   
+      <span class="content">
+     　  <li>  <%= link_to datastr.created_at, datastr_path(datastr.id) %></li>
+        <li>収入 <%= link_to datastr.income, datastr_path(datastr.id) %> </li>
+        <li>支出 <%= link_to datastr.expenses, datastr_path(datastr.id) %> </li>
+        <li>用途 <%= link_to datastr.use, datastr_path(datastr.id) %> </li>
+      </span>
+    <table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="665a1a">
+       
+　　<tr>
+　　 　<th bgcolor="#a25768"><font color="#ebf6f7">収入</font></th>
+　　 　<th bgcolor="#a25768" width="150"><font color="#ebf6f7">支出</font></th>
+　　 　<th bgcolor="#a25768" width="200"><font color="#ebf6f7">用途</font></th>
+　　　</tr>
+　　　<tr>
+　　 　<td bgcolor="#FFFFFF" align="right" nowrap> <%= link_to datastr.income, datastr_path(datastr.id) %>
+　　 　</td>
+　　　 <td bgcolor="#FFFFFF" valign="top" width="150"><%= link_to datastr.expenses, datastr_path(datastr.id) %>
+　　　 </td>
+　　 　<td bgcolor="#FFFFFF" valign="top" width="200"><%= link_to datastr.use, datastr_path(datastr.id) %>
+　　 　</td>
+　　 　 <link_to link="#e8d3d1" vlink="#000080" alink="#ff0000">
+　　　</tr>
+    </table>
+    <footer>
+   
+   </footer>
+  <% end %>
+  <ul class="pager">
+       <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+       <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+     </ul>
+</ul>
